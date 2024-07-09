@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .column1,.column2{
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .row:after{
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .row{
+            display:flex;
+        }
+        .column{
+            flex: 50%;
+        }
+
+        .column1{
+            background-color: blue;
+            color: whitesmoke;
+            height: 1000000px;
+            width: 100%;
+        }
+
+        .column2{
+            background-color: aquamarine;
+            color: blueviolet;
+            height: 1000000px;
+            width: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 6</title>
+</head>
+<body>
+    <div class="row">
+        <div class="column1">
+            <p>Column 1</p>
+            <p>This is column 1</p>
+        </div>
+        <div class="column2">
+            <p>Column 2</p>
+            <p>This is Column 2</p>
+        </div>
+    </div>
+</body>
+</html>
